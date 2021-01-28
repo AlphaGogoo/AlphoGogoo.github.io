@@ -1,33 +1,28 @@
-
-<!-- index.html -->
-<!-- 折叠目录插件作者: https://github.com/Wsine/blog -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta charset="UTF-8">
-  <title>标题</title>
-  <!-- 站标 -->
-  <link rel="shortcut icon" href="" type="image/x-icon">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css" />
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 <body>
- 
-  <div id="app"></div>
-  <script src="https://unpkg.com/docsify-copy-code"></script>
+  <div id="app">Loading</div>
   <script>
-    const sleep = ms => new Promise(r => setTimeout(r, ms));
     window.$docsify = {
-      name: '首页',
-      repo: '#',
+      name: 'my docsify',
+      repo: '',
       loadSidebar: true,
-      auto2top: true,
-      search: 'auto', // 默认值
       alias: {
-        '/.*/_sidebar.md': '/_sidebar.md'
+      '/.*/_sidebar.md': '/_sidebar.md'
       },
+      repo: 'https://github.com',
+      maxLevel: 4,
+      subMaxLevel: 5,
+      auto2top: true,
+      relativePath: true,
       search: {
         placeholder: '请输入搜索关键词...'},
       // markdown渲染
@@ -61,19 +56,21 @@
           }
         }
       },
-	  <!--复制代码-->
+      //复制代码
       copyCode: {
-    buttonText: '点击复制',
-    errorText:  '错误',
-    successText: '复制成功'
-  },
-   pagination: {
-    previousText: '上一章节',
-    nextText: '下一章节',
-    crossChapter: true,
-    crossChapterText: true,
-  },
+        buttonText: '点击复制',
+        errorText:  '错误',
+        successText: '复制成功'
+      },
+      pagination: {
+        previousText: '上一章节',
+        nextText: '下一章节',
+        crossChapter: true,
+        crossChapterText: true,
+      },
     }
+
+
   </script>
   
   <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
@@ -83,7 +80,7 @@
   
   <!-- CDN files for docsify-katex -->
 <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
-<!-- or <script src="//cdn.jsdelivr.net/gh/upupming/docsify-katex@latest/dist/docsify-katex.js"></script> -->
+
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"/>
   <!-- docsify -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
